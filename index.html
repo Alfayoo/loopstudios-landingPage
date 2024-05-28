@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Loopstudios landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- navigation section -->
+    <header>
+      <nav>
+        <ul class="sideBar">
+          <li>
+            <a href=""><img src="images/logo.svg" alt="logo" /> </a>
+            <img onclick="hide()" src="images/icon-close.svg" alt="" />
+          </li>
+          <li>
+            <a href="#about-section">About</a>
+            <hr />
+          </li>
+          <li>
+            <a href="">Careers</a>
+            <hr />
+          </li>
+          <li>
+            <a href="">Events</a>
+            <hr />
+          </li>
+          <li>
+            <a href="#creation-section">Products</a>
+            <hr />
+          </li>
+          <li>
+            <a href="">Support</a>
+            <hr />
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><img src="images/logo.svg" alt="logo" /> </a>
+          </li>
+          <li class="hideBar">
+            <a href="">About</a>
+            <hr />
+          </li>
+          <li class="hideBar">
+            <a href="">Careers</a>
+            <hr />
+          </li>
+          <li class="hideBar">
+            <a href="">Events</a>
+            <hr />
+          </li>
+          <li class="hideBar">
+            <a href="">Products</a>
+            <hr />
+          </li>
+          <li class="hideBar">
+            <a href="">Support</a>
+            <hr />
+          </li>
+          <li>
+            <img
+              class="show"
+              onclick="show()"
+              src="images/mobile/icon-menu.svg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="slideInLeft addJosefin">Immersive experiences that deliver</h1>
+    </header>
+    <!-- about section -->
+    <section id="about-section">
+      <img src="images/desktop/image-interactive.jpg" alt="" />
+      <div class="about-text">
+        <h4 class="addJosefin">The leader in interactive VR</h4>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
+
+    <!-- creations section -->
+    <section id="creation-section">
+      <div class="creation-header">
+        <h3 class="addJosefin">Our Creations</h3>
+        <button>See All</button>
+      </div>
+      <div class="creation-content">
+        <div class="creation-image">
+          <img src="images/desktop/image-deep-earth.jpg" alt="earth image" />
+          <h5 class="addJosefin">Deep Earth</h5>
+        </div>
+
+        <div class="creation-image">
+          <img src="images/desktop/image-night-arcade.jpg" alt="" />
+          <h5 class="addJosefin">Night Arcade</h5>
+        </div>
+
+        <div class="creation-image">
+          <img src="images/desktop/image-soccer-team.jpg" alt="" />
+          <h5 class="addJosefin">Soccer Team VR</h5>
+        </div>
+
+        <div class="creation-image">
+          <img src="images/desktop/image-grid.jpg" alt="" />
+          <h5 class="addJosefin">The Grid</h5>
+        </div>
+
+        <div class="creation-image displayNone">
+          <img src="images/desktop/image-from-above.jpg" alt="" />
+          <h5 class="addJosefin">From Above VR</h5>
+        </div>
+
+        <div class="creation-image displayNone">
+          <img src="images/desktop/image-pocket-borealis.jpg" alt="" />
+          <h5 class="addJosefin">Pocket Borealis</h5>
+        </div>
+
+        <div class="creation-image displayNone">
+          <img src="images/desktop/image-curiosity.jpg" alt="" />
+          <h5 class="addJosefin">The Curiosity</h5>
+        </div>
+
+        <div class="creation-image displayNone">
+          <img src="images/desktop/image-fisheye.jpg" alt="" />
+          <h5 class="addJosefin">Make It Fisheye</h5>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="footer-head">
+        <li><img src="images/logo.svg" alt=""></li>
+        <li><img src="images/icon-facebook.svg" alt=""></li>
+        <li><img src="images/icon-twitter.svg" alt=""></li>
+        <li><img src="images/icon-pinterest.svg" alt=""></li>
+        <li><img src="images/icon-instagram.svg" alt=""></li>
+      </ul>
+      <ul class="footer-content">
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+        <li>© 2021 Loopstudios. All rights reserved. </li>
+      </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
